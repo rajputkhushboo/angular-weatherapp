@@ -1,0 +1,19 @@
+ <html>
+ <head>
+ </head>
+ <body>
+  <br>
+  <div *ngIf="inputdata.forecast">
+    <ul>
+    <h5>City name :{{inputdata.location.name}}</h5>
+    <h5>Date: {{inputdata.current.last_updated}}</h5>
+    <h5>Current Temp: {{inputdata.current.temp_c}} Celsius</h5>
+    <h5>Humidity: {{inputdata.current.humidity}}</h5>
+    <h5>Description: <i>{{inputdata.current.condition.text}}</i></h5>
+  </ul>
+  <br>
+  </div>
+  </body>
+  </html>
+
+ 

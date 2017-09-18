@@ -1,0 +1,18 @@
+ <html>
+ <head>
+ </head>
+ <body>
+  <div *ngIf="inputdata.forecast">
+    <ul *ngFor ="let city of inputdata.forecast.forecastday">
+      <h5> Cityname : {{inputdata.location.name}}</h5>
+      <h5> Date: {{city.date}}</h5>
+      <h5> Maximum Temperature :{{city.day.maxtemp_c}} Celsius</h5>
+      <h5>Minimum Temperature: {{city.day.mintemp_c}} Celsius</h5>
+      <h5>Humidity: {{city.day.avghumidity}}</h5>
+      <h5>Description: <i>{{city.day.condition.text}}</i></h5>
+      <button class="btn btn-primary" (click)=getWeatherData(city,inputdata.location.name)>Add to Favourites</button>
+       <br>
+    </ul>
+  </div>
+</body>
+</html>

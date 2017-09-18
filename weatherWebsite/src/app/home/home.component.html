@@ -1,0 +1,3 @@
+<weather-search (childEvent)="childData($event)"></weather-search>
+<app-weather-list *ngIf="inputweather" [inputdata]= "inputweather"></app-weather-list>
+<app-weather-detail *ngIf="inputweather" [inputdata]= "inputweather"></app-weather-detail>

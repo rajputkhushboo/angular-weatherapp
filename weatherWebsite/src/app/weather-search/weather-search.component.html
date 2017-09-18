@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body class="centerdata">
+  <h1>Search City</h1><br>
+  <br>
+  <input [(ngModel)]="Cityname" placeholder="enter city">
+  <button (click)="Search()" class="btn btn-danger">search</button>
+ <br>
+  <div *ngIf="Weather.forecast">
+    <ul  *ngFor ="let city of Weather.forecast.forecastday">
+    <li><h5>City Name{{Weather.location.name}}</h5></li>
+    <li><h5>Date :{{city.date}}</h5></li>
+    <li><h5>Max.Temperature: {{city.day.maxtemp_c}}</h5></li>
+    <li><h5>Min.Temperature: {{city.day.mintemp_c}}</h5></li>
+    <li><h5>Humidity: {{city.day.avghumidity}}</h5></li>
+    <li><h5>Description: {{city.day.condition.text}}</h5></li>
+  </ul>
+  </div>
+<button class="btn btn-danger" routerLink="/header">GoBack</button>
+</body>
+</html>

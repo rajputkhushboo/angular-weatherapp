@@ -1,0 +1,27 @@
+
+<div class="container">
+<table class="table table-responsive table-sm table-bordered Fav">
+  <thead>
+    <tr >
+      <th>Cityname</th>
+      <th>Date</th>
+      <th>Max.Temperature</th>
+      <th>Min.Temperature</th>
+      <th>Humidity</th>
+      <th>Description</th>
+       <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{favupdate.city}}</td>
+      <td>{{favupdate.date}}</td>
+      <td>{{favupdate.max_temp}}</td>
+      <td>{{favupdate.min_temp}}</td>
+      <td>{{favupdate.humidity}}</td>
+      <td><input [(ngModel)]="updatedata" placeholder="{{favupdate.Description}}"></td>
+      <td><button class="btn btn-success" (click)=updateweather(favupdate)>Update</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

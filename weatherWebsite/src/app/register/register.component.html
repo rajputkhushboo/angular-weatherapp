@@ -1,0 +1,67 @@
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Register</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Name">Name</label>  
+  <div class="col-md-2">
+  <input id="Name" name="Name" type="text" placeholder="Name" class="form-control input-md" [(ngModel)]="data.Name">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="username">User Name</label>  
+  <div class="col-md-2">
+  <input id="username" name="username" type="text" placeholder="User Name" class="form-control input-md" required="" [(ngModel)]="data.username">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>
+  <div class="col-md-2">
+    <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required=""  [(ngModel)]="data.password">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password2">Repeat Password</label>
+  <div class="col-md-2">
+    <input id="password2" name="password2" type="password" placeholder="Repeat Password" class="form-control input-md" required=""  [(ngModel)]="data.password2">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailaddr"  >Email</label>  
+  <div class="col-md-2">
+  <input id="emailaddr" name="emailaddr" type="text" placeholder="Email" class="form-control input-md" required="" [(ngModel)]="data.emailaddr">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-md btn-danger pull-right" (click)=storedata(data) >Submit</button>
+      <button id="submit" name="submit" class="btn btn-md btn-danger pull-right" routerLink="/" >Go back</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<div class="container">
+  <div class="row">
+  </div>
+</div>
